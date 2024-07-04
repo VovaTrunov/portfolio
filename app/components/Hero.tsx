@@ -11,7 +11,7 @@ const CSSName = styled.h1`
   }
 
   @media (min-width: 1024px) {
-    font-size: clamp(6vw, 5.75vw, 6.5vw);
+    font-size: clamp(5vw, 5.75vw, 6vw);
   }
 `;
 

@@ -1,11 +1,14 @@
 export type TTestimonial = {
   id: string;
   position: string;
-  fullName: string;
-  message: string;
+  name: string;
+  company: string;
+  message: string | React.ReactElement;
   linkedIn: string;
   avatar: string;
   website?: string;
+  company_logo: string;
+  company_url: string;
 };
 
 export type TTimelineEntry = {

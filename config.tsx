@@ -8,40 +8,67 @@ import {
 export const TESTIMONIALS: TTestimonial[] = [
   {
     id: "2ecfefd2-3dcc-568a-af3a-11ec4298b9c3",
-    position: "Co-founder at MySeat Media",
-    fullName: "Che Hodgins",
-    message:
-      "Volodymyr is a talented developer with a keen eye for design. He is a pleasure to work with and always goes above and beyond.",
+    position: "Co-founder",
+    name: "Che Hodgins",
+    company: "MySeat Media",
+    message: (
+      <>
+        Talented developer with a <span>keen eye for design</span>. Always
+        pleasure to work with!
+      </>
+    ),
     linkedIn: "https://www.linkedin.com/in/chehodgins/",
     avatar: "/testimonials/che.png",
+    company_logo: "/testimonials/myseat-logo.jpg",
+    company_url: "https://myseatmedia.com/",
   },
   {
     id: "2bff25d4-cb71-5527-b62d-b58b48cd6b7e",
-    position: "CEO & Co-founder at Audible Reality",
-    fullName: "Matt Boerum",
-    message:
-      "Vlad’s ability to come up with and later translate complex designs into a real web application are on point!",
+    position: "CEO & Co-founder",
+    name: "Matt Boerum",
+    company: "Audible Reality",
+    message: (
+      <>
+        Vlad&apos;s skills and passion make him an{" "}
+        <span>invaluable asset to any team</span>.
+      </>
+    ),
     linkedIn: "https://www.linkedin.com/in/mattboerum/",
     website: "https://www.mattboerum.com/",
     avatar: "/testimonials/matt.png",
+    company_logo: "/testimonials/ar-logo.jpg",
+    company_url: "https://audiblereality.com/",
   },
   {
     id: "519dacea-e3f8-5b0f-85be-af7b00b862e2",
-    position: "IP Development at HisTurn Fertility",
-    fullName: "Bryan Martin",
-    message:
-      "Volodymyr's attention to detail and dedication to success are unmatched!",
+    position: "IP Development",
+    name: "Bryan Martin",
+    company: "HisTurn Fertility",
+    message: (
+      <>
+        His attention to detail and <span>dedication to success</span> are
+        unmatched!
+      </>
+    ),
     linkedIn: "https://www.linkedin.com/in/bryan-martin-46a4294/",
     avatar: "/testimonials/bryan.png",
+    company_logo: "/testimonials/histurn-logo.jpg",
+    company_url: "https://histurnfertility.com/",
   },
   {
     id: "oij123o1232-e3f8-5b0f-85be-af7b00b862e2",
-    position: "CEO at Lumenalta",
-    fullName: "Roy Terry",
-    message:
-      "Volodymyr's Id velit ad duis voluptate. Pariatur aliquip ex cillum est qui dolore. Qui tempor velit voluptate nisi tempor nulla tempor in nisi minim dolore.",
-    linkedIn: "https://www.linkedin.com/in/bryan-martin-46a4294/",
-    avatar: "/testimonials/bryan.png",
+    position: "President",
+    name: "Robert Dancik",
+    company: "Reel in Motion",
+    message: (
+      <>
+        Unwavering dedication with <span>outstanding results</span>.
+      </>
+    ),
+    linkedIn: "https://www.linkedin.com/in/robertdancik/",
+    avatar: "/testimonials/robert.jpg",
+    company_logo: "/testimonials/rim-logo.jpg",
+    company_url: "https://reelinmotion.com/",
   },
 ];
 

@@ -6,7 +6,7 @@ const ProjectOne: React.FC = () => {
   return (
     <Box
       id="project-1"
-      className="flex sm:flex-row flex-col lg:justify-between justify-start group"
+      className="flex sm:flex-row flex-col justify-start group"
       style={{ gridArea: "project1" }}
     >
       <div className="relative h-full sm:grayscale sm:group-hover:grayscale-0 transition-[filter] duration-500 sm:w-[40%] overflow-hidden">

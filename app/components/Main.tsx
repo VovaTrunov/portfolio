@@ -71,7 +71,7 @@ const CSSMain = styled.main`
       "testimonials testimonials testimonials testimonials"
       "testimonials testimonials testimonials testimonials";
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(23, 80px);
+    grid-template-rows: repeat(22, 80px);
   }
 `;
 
