@@ -47,3 +47,7 @@ const Social: React.FC = () => {
 };
 
 export default Social;
+
+
+// ns71.domaincontrol.com
+// ns72.domaincontrol.com

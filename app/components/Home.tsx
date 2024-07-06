@@ -14,9 +14,9 @@ import Languages from "@/app/components/Languages";
 
 import * as CSS from "@/app/style";
 
-export default function Main() {
+export default function Home() {
   return (
-    <CSS.Main>
+    <CSS.Home>
       <Timeline />
       <Testimonials />
       <TechStack />
@@ -28,6 +28,6 @@ export default function Main() {
       <Location />
       <Social />
       <Contact />
-    </CSS.Main>
+    </CSS.Home>
   );
 }
