@@ -27,8 +27,10 @@ const ProjectOne: React.FC = () => {
         <p className="text-textGray text-sm font-medium mt-3">
           Meet all your audio mixing needs in one place
         </p>
-        <Button variant="link" size="sm" className="mt-3 px-0">
-          Learn More
+        <Button asChild variant="link" size="sm" className="mt-3 px-0">
+          <a href="https://app.spatialmastering.com" target="_blank">
+            Learn More
+          </a>
         </Button>
       </div>
     </AnimatedCard>

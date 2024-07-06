@@ -16,8 +16,10 @@ const ProjectTwo: React.FC = () => {
         <p className="text-textGray text-sm font-medium mt-3">
           Create a free, working trial of your app in minutes
         </p>
-        <Button variant="link" size="sm" className="mt-3 px-0">
-          Learn More
+        <Button asChild variant="link" size="sm" className="mt-3 px-0">
+          <a href="https://creators.myseat.com" target="_blank">
+            Learn More
+          </a>
         </Button>
       </div>
       <div className="relative pt-4 overflow-hidden rounded-xl">

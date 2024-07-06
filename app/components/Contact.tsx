@@ -7,7 +7,11 @@ const Contact: React.FC = () => {
       id="contact"
       className="hidden sm:flex justify-center items-center gap-3"
     >
-      <Button variant="primary">Contact</Button>
+      <Button asChild variant="primary">
+        <a href="mailto:iamvladimirtrunov@gmail.com" target="_blank">
+          Contact
+        </a>
+      </Button>
       <Button>Resumé</Button>
     </AnimatedCard>
   );
