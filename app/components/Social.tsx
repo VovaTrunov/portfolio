@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Box from "./Box";
 import { Button } from "./ui/button";
+import AnimatedCard from "./AnimatedCard";
 
 const Social: React.FC = () => {
   return (
-    <Box id="social" className="flex flex-col" style={{ gridArea: "social" }}>
+    <AnimatedCard id="social" className="flex flex-col">
       <div className="grid place-items-center grow">
         <Button
           size="icon"
@@ -33,7 +33,7 @@ const Social: React.FC = () => {
           />
         </Button>
       </div>
-    </Box>
+    </AnimatedCard>
   );
 };
 

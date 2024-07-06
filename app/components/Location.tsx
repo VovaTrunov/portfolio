@@ -1,12 +1,11 @@
 import Image from "next/image";
-import Box from "./Box";
+import AnimatedCard from "./AnimatedCard";
 
 const Location: React.FC = () => {
   return (
-    <Box
+    <AnimatedCard
       id="location"
       className="flex items-center justify-center gap-3"
-      style={{ gridArea: "location" }}
     >
       <Image src="/icons/geo.svg" width={25} height={25} alt="Clock Icon" />
       <div>
@@ -15,7 +14,7 @@ const Location: React.FC = () => {
           Calgary, Canada
         </p>
       </div>
-    </Box>
+    </AnimatedCard>
   );
 };
 

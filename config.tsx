@@ -1,5 +1,7 @@
 import {
+  TCard,
   TProgrammingLanguage,
+  TBreakpointSize,
   TTechStack,
   TTestimonial,
   TTimelineEntry,
@@ -62,7 +64,7 @@ export const TESTIMONIALS: TTestimonial[] = [
     company: "Reel in Motion",
     message: (
       <>
-        Unwavering dedication with <span>outstanding results</span>.
+        Unwavering determination with <span>outstanding results</span>.
       </>
     ),
     linkedIn: "https://www.linkedin.com/in/robertdancik/",
@@ -133,3 +135,42 @@ export const TECH_STACK: TTechStack[] = [
     icon: "/icons/mongodb.svg",
   },
 ];
+
+export const ANIMATION_QUEUE: { [key in TBreakpointSize]: TCard[] } = {
+  lg: [
+    "location",
+    "contact",
+    "social",
+    "testimonials",
+    "languages",
+    "experience",
+    "project1",
+    "timeline",
+    "techstack",
+    "project2",
+  ],
+  md: [
+    "experience",
+    "contact",
+    "techstack",
+    "project2",
+    "timeline",
+    "social",
+    "location",
+    "languages",
+    "testimonials",
+    "project1",
+  ],
+  sm: [
+    "contact",
+    "experience",
+    "techstack",
+    "project2",
+    "timeline",
+    "social",
+    "project1",
+    "location",
+    "languages",
+    "testimonials",
+  ],
+};

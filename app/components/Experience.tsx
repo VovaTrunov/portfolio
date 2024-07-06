@@ -1,11 +1,10 @@
-import Box from "./Box";
+import AnimatedCard from "./AnimatedCard";
 
 const Experience: React.FC = () => {
   return (
-    <Box
+    <AnimatedCard
       id="experience"
-      className="flex items-center justify-center gap-3 p-3"
-      style={{ gridArea: "experience" }}
+      className="flex items-center justify-center gap-3 p-4"
     >
       <p
         className="text-gradient-orange text-8xl font-bold"
@@ -19,7 +18,7 @@ const Experience: React.FC = () => {
       >
         Years of <br /> Experience
       </p>
-    </Box>
+    </AnimatedCard>
   );
 };
 

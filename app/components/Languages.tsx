@@ -1,12 +1,13 @@
 import Image from "next/image";
-import Box from "./Box";
 import { PROGRAMMING_LANGUAGES } from "@/config";
+import AnimatedCard from "./AnimatedCard";
+import TiltCard from "./TiltCard";
 
 const Languages: React.FC = () => {
   const languagesDom = PROGRAMMING_LANGUAGES.map((language) => (
-    <Box
+    <TiltCard
       key={language.name}
-      className="p-3 grid place-content-center grow"
+      className="card p-3 grid place-content-center grow"
     >
       <Image
         src={language.icon}
@@ -14,17 +15,16 @@ const Languages: React.FC = () => {
         height={40}
         alt={`${language.name} Logo`}
       />
-    </Box>
+    </TiltCard>
   ));
 
   return (
-    <Box
-      id="language"
-      className="bg-transparent border-0 col-span-3 flex justify-center items-stretch"
-      style={{ gridArea: "languages" }}
+    <AnimatedCard
+      id="languages"
+      className="bg-transparent border-0 flex justify-center items-stretch gap-3"
     >
-      <div className="flex justify-between grow gap-3">{languagesDom}</div>
-    </Box>
+      {languagesDom}
+    </AnimatedCard>
   );
 };
 

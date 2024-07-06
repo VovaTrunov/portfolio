@@ -5,6 +5,7 @@
 
 @layer base {
   :root {
+    --size: 'md';
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
 
@@ -86,6 +87,7 @@
     overflow-x: hidden;
   }
 
+
   ::selection {
     @apply bg-orange text-primary;
   }
@@ -103,6 +105,9 @@
   }
   .text-gradient-white  {
     @apply bg-gradient-to-t from-white/60 to-white to-70% inline-block text-transparent bg-clip-text
+  }
+  .card {
+    @apply border border-white/5 bg-box rounded-xl relative;
   }
 }
   

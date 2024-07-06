@@ -1,4 +1,4 @@
-import Box from "./Box";
+import Box from "./AnimatedCard";
 import Image from "next/image";
 
 const LeetCode: React.FC = () => {

@@ -6,13 +6,13 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/app/components/ui/carousel";
-import Box from "./Box";
 import Image from "next/image";
 import { TESTIMONIALS } from "@/config";
 import { Fragment, useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import Fade from "embla-carousel-fade";
 import styled from "styled-components";
+import AnimatedCard from "./AnimatedCard";
 
 const CSSMessage = styled.p`
   line-height: 1.25;
@@ -45,12 +45,9 @@ const Testimonials: React.FC = () => {
 
   const carouselItems = TESTIMONIALS.map((testimonial) => (
     <Fragment key={testimonial.id}>
-      <CarouselItem className="group flex flex-col gap-5">
-        <CSSMessage className="text-white/50 italic">
-          &quot;{testimonial.message}&quot;
-        </CSSMessage>
-        <div className="flex gap-5 items-center">
-          <div className="relative w-10 h-10">
+      <CarouselItem className="group">
+        <div className="flex gap-4 w-full items-center group">
+          <div className="relative w-10 h-10 grayscale group-hover:grayscale-0 transition-all">
             <Image
               src={testimonial.avatar}
               alt={testimonial.name}
@@ -68,7 +65,11 @@ const Testimonials: React.FC = () => {
           <div className="flex flex-col">
             <p className="text-[11px] text-textGray font-medium">
               {testimonial.position} at{" "}
-              <a className="hover:underline hover:text-white/50 transition-all" href={testimonial.company_url} target="_blank">
+              <a
+                className="hover:underline hover:text-white/50 transition-all"
+                href={testimonial.company_url}
+                target="_blank"
+              >
                 {testimonial.company}
               </a>
             </p>
@@ -77,6 +78,9 @@ const Testimonials: React.FC = () => {
             </h4>
           </div>
         </div>
+        <CSSMessage className="text-white/50 italic mt-4">
+          &quot;{testimonial.message}&quot;
+        </CSSMessage>
       </CarouselItem>
     </Fragment>
   ));
@@ -92,15 +96,14 @@ const Testimonials: React.FC = () => {
   }, [api]);
 
   return (
-    <Box
+    <AnimatedCard
       id="testimonials"
-      className="p-4 flex flex-col justify-between"
-      style={{ gridArea: "testimonials" }}
+      className="card flex flex-col justify-center item-center p-8"
     >
-      <Carousel setApi={setApi} plugins={[Autoplay({ delay: 10000 }), Fade()]}>
+      <Carousel setApi={setApi} plugins={[Autoplay({ delay: 7000 }), Fade()]}>
         <CarouselContent>{carouselItems}</CarouselContent>
       </Carousel>
-      <div className="flex gap-3 items-center justify-between relative">
+      {/* <div className="relative flex gap-3 items-center justify-between">
         {TESTIMONIALS.map((_, index) => (
           <div
             key={index}
@@ -114,8 +117,8 @@ const Testimonials: React.FC = () => {
             left: `calc(${current * 25}% + ${current * 3}px)`,
           }}
         />
-      </div>
-    </Box>
+      </div> */}
+    </AnimatedCard>
   );
 };
 

@@ -27,3 +27,17 @@ export type TTechStack = {
   name: string;
   icon: string;
 };
+
+export type TBreakpointSize = "sm" | "md" | "lg";
+
+export type TCard =
+  | "experience"
+  | "contact"
+  | "techstack"
+  | "project2"
+  | "timeline"
+  | "social"
+  | "location"
+  | "languages"
+  | "testimonials"
+  | "project1";

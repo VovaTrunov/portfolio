@@ -1,15 +1,14 @@
 import Image from "next/image";
-import Box from "./Box";
 import { Button } from "./ui/button";
+import AnimatedCard from "./AnimatedCard";
 
 const ProjectOne: React.FC = () => {
   return (
-    <Box
-      id="project-1"
+    <AnimatedCard
+      id="project1"
       className="flex sm:flex-row flex-col justify-start group"
-      style={{ gridArea: "project1" }}
     >
-      <div className="relative h-full sm:grayscale sm:group-hover:grayscale-0 transition-[filter] duration-500 sm:w-[40%] overflow-hidden">
+      <div className="relative h-full sm:grayscale sm:group-hover:grayscale-0 transition-[filter] duration-500 sm:w-[40%] overflow-hidden rounded-l-xl">
         <Image
           className="group-hover:scale-105 transition-transform duration-700 object-cover object-top"
           src="/project-1.png"
@@ -32,7 +31,7 @@ const ProjectOne: React.FC = () => {
           Learn More
         </Button>
       </div>
-    </Box>
+    </AnimatedCard>
   );
 };
 

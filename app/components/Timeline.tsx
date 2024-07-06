@@ -1,7 +1,6 @@
-import Box from "./Box";
-
 import { TIMELINE } from "@/config";
 import { cn } from "@/lib/utils";
+import AnimatedCard from "./AnimatedCard";
 
 const Timeline: React.FC = () => {
   const timelineDom = TIMELINE.map((timeline, index) => {
@@ -33,13 +32,9 @@ const Timeline: React.FC = () => {
   });
 
   return (
-    <Box
-      id="timeline"
-      className="flex flex-col"
-      style={{ gridArea: "timeline" }}
-    >
+    <AnimatedCard id="timeline" className="card flex flex-col">
       {timelineDom}
-    </Box>
+    </AnimatedCard>
   );
 };
 

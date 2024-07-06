@@ -1,14 +1,10 @@
 import Image from "next/image";
-import Box from "./Box";
 import { Button } from "./ui/button";
+import AnimatedCard from "./AnimatedCard";
 
 const ProjectTwo: React.FC = () => {
   return (
-    <Box
-      id="project-2"
-      className="group flex flex-col justify-between"
-      style={{ gridArea: "project2" }}
-    >
+    <AnimatedCard id="project2" className="flex flex-col justify-between group">
       <div className="p-6 flex flex-col justify-center items-start">
         <p className="text-xs font-medium mb-1 text-textGray">Project</p>
         <h2 className="text-2xl font-semibold text-gradient-white">
@@ -24,14 +20,16 @@ const ProjectTwo: React.FC = () => {
           Learn More
         </Button>
       </div>
-      <Image
-        className="w-full sm:grayscale sm:translate-y-0 -translate-y-12 group-hover:grayscale-0 sm:group-hover:scale-105 transition-all duration-700"
-        src="/project-2.png"
-        width={3000}
-        height={2250}
-        alt=""
-      />
-    </Box>
+      <div className="relative pt-4 overflow-hidden rounded-xl">
+        <Image
+          className="w-full sm:grayscale group-hover:grayscale-0 sm:group-hover:scale-105 transition-all duration-700"
+          src="/project-2.png"
+          width={3000}
+          height={2250}
+          alt=""
+        />
+      </div>
+    </AnimatedCard>
   );
 };
 
