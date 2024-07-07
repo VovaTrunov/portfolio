@@ -23,18 +23,18 @@ const Hero: React.FC = () => {
 
   const transition = {
     heading: {
-      duration: 1.5,
+      duration: 1,
       ease: [0, 0.55, 0.45, 1],
     },
     subheading: {
-      duration: 1.5,
+      duration: 1,
       ease: [0, 0.55, 0.45, 1],
-      delay: breakpoint === "lg" ? 0.75 : 0,
+      delay: breakpoint === "lg" ? 0.5 : 0,
     },
     bg: {
       duration: 1,
       ease: [0, 0.55, 0.45, 1],
-      delay: breakpoint === "lg" ? 2 : 0,
+      delay: breakpoint === "lg" ? 1.5 : 0,
     },
   };
 

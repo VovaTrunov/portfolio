@@ -33,7 +33,7 @@ const Card: React.FC<AnimatedCardProps> = ({
   const transition = {
     duration: 1,
     ease: [0, 0.55, 0.45, 1],
-    delay: breakpoint === "lg" ? queuePosition * 0.1 + 1.5 : 0,
+    delay: breakpoint === "lg" ? queuePosition * 0.1 + 1 : 0,
   };
 
   return (
