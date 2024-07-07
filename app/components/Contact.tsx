@@ -12,7 +12,14 @@ const Contact: React.FC = () => {
           Contact
         </a>
       </Button>
-      <Button>Resumé</Button>
+      <Button asChild>
+        <a
+          href="https://s3.us-west-1.amazonaws.com/vtrunov.com/Volodymyr+Trunov+-+CV.pdf"
+          target="_blank"
+        >
+          Resumé
+        </a>
+      </Button>
     </AnimatedCard>
   );
 };

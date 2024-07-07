@@ -78,8 +78,19 @@ const Hero: React.FC = () => {
           Software Engineer & Creative Thinker
         </h4>
         <div className="flex justify-center items-center gap-3 mt-5 sm:hidden">
-          <Button variant="primary">Contact</Button>
-          <Button>Resumé</Button>
+          <Button asChild variant="primary">
+            <a href="mailto:iamvladimirtrunov@gmail.com" target="_blank">
+              Contact
+            </a>
+          </Button>
+          <Button asChild>
+            <a
+              href="https://s3.us-west-1.amazonaws.com/vtrunov.com/Volodymyr+Trunov+-+CV.pdf"
+              target="_blank"
+            >
+              Resumé
+            </a>
+          </Button>
         </div>
       </motion.div>
       <motion.div
