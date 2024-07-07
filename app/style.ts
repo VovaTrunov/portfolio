@@ -6,6 +6,7 @@ export const Home = styled.main`
   display: grid;
   gap: 1.25rem;
   padding: 1.25rem;
+  overflow-x: hidden;
 
   @media (min-width: 1024px) {
     height: 100vh;
