@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { TECH_STACK } from "@/config";
 import AnimatedCard from "./AnimatedCard";
-import TiltCard from "./TiltCard";
+import HoverCard from "./HoverCard";
 
 const TechStack: React.FC = () => {
   const techStackDom = TECH_STACK.map((tech) => (
-    <TiltCard
+    <HoverCard
       key={tech.name}
+      label={tech.name}
       className="card p-3 grid place-content-center grow"
     >
       <Image
@@ -16,7 +17,7 @@ const TechStack: React.FC = () => {
         height={40}
         alt={`${tech.name} Logo`}
       />
-    </TiltCard>
+    </HoverCard>
   ));
 
   return (

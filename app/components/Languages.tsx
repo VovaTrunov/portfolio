@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { PROGRAMMING_LANGUAGES } from "@/config";
 import AnimatedCard from "./AnimatedCard";
-import TiltCard from "./TiltCard";
+import HoverCard from "./HoverCard";
 
 const Languages: React.FC = () => {
   const languagesDom = PROGRAMMING_LANGUAGES.map((language) => (
-    <TiltCard
+    <HoverCard
       key={language.name}
+      label={language.name}
       className="card p-3 grid place-content-center grow"
     >
       <Image
@@ -15,7 +16,7 @@ const Languages: React.FC = () => {
         height={40}
         alt={`${language.name} Logo`}
       />
-    </TiltCard>
+    </HoverCard>
   ));
 
   return (

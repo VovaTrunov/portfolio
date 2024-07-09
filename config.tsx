@@ -15,7 +15,7 @@ export const TESTIMONIALS: TTestimonial[] = [
     company: "MySeat Media",
     message: (
       <>
-        Talented developer with a <span>keen eye for design</span>. Always
+        Talented developer with a <span>keen eye for design</span>. Always a
         pleasure to work with!
       </>
     ),
@@ -119,7 +119,7 @@ export const TECH_STACK: TTechStack[] = [
     icon: "/icons/react.svg",
   },
   {
-    name: "Tailwind",
+    name: "TailwindCSS",
     icon: "/icons/tailwind.svg",
   },
   {
