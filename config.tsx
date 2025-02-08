@@ -77,20 +77,20 @@ export const TESTIMONIALS: TTestimonial[] = [
 export const TIMELINE: TTimelineEntry[] = [
   {
     yearStart: 2014,
-    yearEnd: 2018,
-    title: "McGill University",
-    description: "Bachelor Degree",
-  },
-  {
-    yearStart: 2014,
     yearEnd: 2023,
     title: "Audible Reality",
     description: "Founding Developer",
   },
   {
     yearStart: 2023,
+    yearEnd: 2024,
     title: "MySeat Media",
     description: "Front-end Engineer",
+  },
+  {
+    yearStart: 2024,
+    title: "Robots & Pencils",
+    description: "Sr. Front-end Engineer",
   },
 ];
 
