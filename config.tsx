@@ -82,14 +82,14 @@ export const TIMELINE: TTimelineEntry[] = [
     description: "Founding Developer",
   },
   {
-    yearStart: 2023,
-    yearEnd: 2024,
-    title: "MySeat Media",
-    description: "Front-end Engineer",
+    yearStart: 2024,
+    yearEnd: 2025,
+    title: "Robots & Pencils",
+    description: "Sr. Front-end Engineer",
   },
   {
-    yearStart: 2024,
-    title: "Robots & Pencils",
+    yearStart: 2025,
+    title: "Elevate Labs",
     description: "Sr. Front-end Engineer",
   },
 ];
