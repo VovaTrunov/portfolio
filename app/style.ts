@@ -48,6 +48,7 @@ export const Home = styled.main`
       "hero hero hero hero"
       "hero hero hero hero"
       "experience experience experience experience"
+      "contact contact contact contact"
       "techstack techstack techstack techstack"
       "techstack techstack techstack techstack"
       "project2 project2 project2 project2"
@@ -69,6 +70,6 @@ export const Home = styled.main`
       "testimonials testimonials testimonials testimonials"
       "testimonials testimonials testimonials testimonials";
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(22, 80px);
+    grid-template-rows: repeat(23, 80px);
   }
 `;
