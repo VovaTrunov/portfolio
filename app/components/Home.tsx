@@ -1,6 +1,6 @@
 "use client";
 
-import Testimonials from "@/app/components/Testimonials";
+import CollaborativeCanvas from "@/app/components/CollaborativeCanvas";
 import Timeline from "@/app/components/Timeline";
 import Experience from "@/app/components/Experience";
 import Hero from "@/app/components/Hero";
@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <CSS.Home>
       <Timeline />
-      <Testimonials />
+      <CollaborativeCanvas />
       <TechStack />
       <Experience />
       <Hero />
