@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   Check,
   Eraser,
-  History,
+  GalleryHorizontal,
   Maximize2,
   RefreshCw,
   RotateCcw,
@@ -762,7 +762,7 @@ export default function CollaborativeCanvas() {
                 className="flex items-center justify-center w-7 h-7 rounded-lg text-[#6b7280] hover:text-white transition-colors"
                 title="View all drawings"
               >
-                <History size={15} />
+                <GalleryHorizontal size={20} />
               </button>
             </div>
             <div
