@@ -7,6 +7,8 @@ export const Home = styled.main`
   gap: 1.25rem;
   padding: 1.25rem;
   overflow-x: hidden;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: 1024px) {
     height: 100vh;

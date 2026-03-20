@@ -32,7 +32,7 @@ const Timeline: React.FC = () => {
   });
 
   return (
-    <AnimatedCard id="timeline" className="card flex flex-col">
+    <AnimatedCard id="timeline" className="flex flex-col">
       {timelineDom}
     </AnimatedCard>
   );

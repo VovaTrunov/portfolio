@@ -97,6 +97,49 @@
   }
 }
 
+/* ─── Cursor ─── */
+@media (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+}
+
+
+/* ─── Film grain shift ─── */
+@keyframes grainShift {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -20%);
+  }
+  40% {
+    transform: translate(-5%, 20%);
+  }
+  50% {
+    transform: translate(-12%, 8%);
+  }
+  60% {
+    transform: translate(12%, 0%);
+  }
+  70% {
+    transform: translate(0%, 12%);
+  }
+  80% {
+    transform: translate(3%, 25%);
+  }
+  90% {
+    transform: translate(-10%, 8%);
+  }
+}
+
 @layer components {
   .text-gradient-orange {
     @apply bg-gradient-to-t from-orange-dark to-orange inline-block text-transparent bg-clip-text

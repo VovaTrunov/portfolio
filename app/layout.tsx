@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import StyledComponentsRegistry from "@/lib/registry";
+import CustomCursor from "@/app/components/CustomCursor";
+import GrainOverlay from "@/app/components/GrainOverlay";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -24,7 +26,8 @@ export default function RootLayout({
     <StyledComponentsRegistry>
       <html lang="en">
         <body className={montserrat.className}>
-          {/* <Cursor /> */}
+          <GrainOverlay />
+          <CustomCursor />
           {children}
         </body>
       </html>

@@ -98,7 +98,7 @@ const Testimonials: React.FC = () => {
   return (
     <AnimatedCard
       id="testimonials"
-      className="card flex flex-col justify-center item-center p-8"
+      className="flex flex-col justify-center items-center p-8 overflow-visible"
     >
       <Carousel setApi={setApi} plugins={[Autoplay({ delay: 7000 }), Fade()]}>
         <CarouselContent>{carouselItems}</CarouselContent>
