@@ -80,17 +80,20 @@ export const TIMELINE: TTimelineEntry[] = [
     yearEnd: 2023,
     title: "Audible Reality",
     description: "Founding Developer",
+    url: "https://audiblereality.com/",
   },
   {
     yearStart: 2024,
     yearEnd: 2025,
     title: "Robots & Pencils",
     description: "Sr. Front-end Engineer",
+    url: "https://robotsandpencils.com/",
   },
   {
     yearStart: 2025,
-    title: "Elevate Labs",
+    title: "The Mind Company",
     description: "Sr. Front-end Engineer",
+    url: "https://themindcompany.com/",
   },
 ];
 

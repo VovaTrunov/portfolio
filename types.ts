@@ -16,6 +16,7 @@ export type TTimelineEntry = {
   yearEnd?: number;
   title: string;
   description: string;
+  url?: string;
 };
 
 export type TProgrammingLanguage = {
