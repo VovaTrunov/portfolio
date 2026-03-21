@@ -161,7 +161,7 @@ function CardPreview({ drawing }: { drawing: DrawingRecord | null }) {
 
     const totalTime = strokes[strokes.length - 1].endT;
     const loopDuration = totalTime + LOOP_PAUSE;
-    const aspect = drawing.aspect;
+    const aspect = drawing?.aspect;
     startRef.current = null;
 
     const loop = (now: number) => {
