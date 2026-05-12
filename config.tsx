@@ -76,7 +76,7 @@ export const TESTIMONIALS: TTestimonial[] = [
 
 export const TIMELINE: TTimelineEntry[] = [
   {
-    yearStart: 2014,
+    yearStart: 2018,
     yearEnd: 2023,
     title: "Audible Reality",
     description: "Founding Developer",

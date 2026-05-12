@@ -2,7 +2,7 @@ import AnimatedCard from "./AnimatedCard";
 
 const Experience: React.FC = () => {
   const yearsOfExperience = () => {
-    const startDate = new Date("2014-01-01");
+    const startDate = new Date("2018-01-01");
     const currentDate = new Date();
     const diff = currentDate.getTime() - startDate.getTime();
     const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
